@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS srennis;
+USE srennis;
+CREATE TABLE IF NOT EXISTS user (
+  nameId int(11) NOT NULL AUTO_INCREMENT,
+  name varchar(50) DEFAULT NULL,
+  email varchar(80) DEFAULT NULL,
+  password varchar(80) DEFAULT NULL,
+  PRIMARY KEY (`nameId`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
