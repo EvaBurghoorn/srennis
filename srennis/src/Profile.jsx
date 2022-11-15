@@ -1,26 +1,37 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import Alert from 'react-bootstrap/Alert';
+// import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+import Trees from './Trees';
 
 
 
 
-function App() {
+function Profile() {
   return (
-    <Container class="App">
+    <Container>
       <Row>
         <h1>Your magic forest</h1>
+        <br />
+        <Col>
+        <Button variant="success">Plant een boom</Button>
+        </Col>
+        <br />
 
+        <h2>Ecologische voetafdruk</h2>
+        <hr />
+        <h2>Badges</h2>
 
-        <button>Plant een boom</button>
+      
 
-        <h1>Ecologische voetafdruk</h1>
+      </Row>
+      <Row>
+        <Col>
 
-        <h1>Badges</h1>
-
-        <Alert variant='warning'> bla bla </Alert>
-
+          <h3>Boom 1</h3>
+          <Trees/>
+          </Col>
       </Row>
     </Container>
 
@@ -28,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default Profile;
